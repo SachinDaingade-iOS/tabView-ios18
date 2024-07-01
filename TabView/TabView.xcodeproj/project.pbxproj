@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A8090E12C3327D50099FC29 /* PartiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090E02C3327CF0099FC29 /* PartiesView.swift */; };
+		4A8090E32C3327FE0099FC29 /* PlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090E22C3327FA0099FC29 /* PlanningView.swift */; };
+		4A8090E52C3328270099FC29 /* AttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090E42C3328230099FC29 /* AttendanceView.swift */; };
+		4A8090E72C3328550099FC29 /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090E62C3328520099FC29 /* SongListView.swift */; };
+		4A8090EC2C332A810099FC29 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090EB2C332A7B0099FC29 /* Party.swift */; };
+		4A8090F12C332B360099FC29 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8090F02C332B2C0099FC29 /* MusicCell.swift */; };
 		4AE0DE292C30ECB000B2532A /* TabViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0DE282C30ECB000B2532A /* TabViewApp.swift */; };
 		4AE0DE2B2C30ECB000B2532A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0DE2A2C30ECB000B2532A /* ContentView.swift */; };
 		4AE0DE2D2C30ECB300B2532A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE0DE2C2C30ECB300B2532A /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A8090E02C3327CF0099FC29 /* PartiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiesView.swift; sourceTree = "<group>"; };
+		4A8090E22C3327FA0099FC29 /* PlanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningView.swift; sourceTree = "<group>"; };
+		4A8090E42C3328230099FC29 /* AttendanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceView.swift; sourceTree = "<group>"; };
+		4A8090E62C3328520099FC29 /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
+		4A8090EB2C332A7B0099FC29 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		4A8090F02C332B2C0099FC29 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
 		4AE0DE252C30ECB000B2532A /* TabView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE0DE282C30ECB000B2532A /* TabViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewApp.swift; sourceTree = "<group>"; };
 		4AE0DE2A2C30ECB000B2532A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +83,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A8090DF2C3327750099FC29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A8090E62C3328520099FC29 /* SongListView.swift */,
+				4A8090E42C3328230099FC29 /* AttendanceView.swift */,
+				4A8090E02C3327CF0099FC29 /* PartiesView.swift */,
+				4A8090E22C3327FA0099FC29 /* PlanningView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A8090EA2C332A700099FC29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A8090EB2C332A7B0099FC29 /* Party.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A8090EF2C332B140099FC29 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A8090F02C332B2C0099FC29 /* MusicCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		4AE0DE1C2C30ECB000B2532A = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +133,9 @@
 		4AE0DE272C30ECB000B2532A /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				4A8090EF2C332B140099FC29 /* Cells */,
+				4A8090EA2C332A700099FC29 /* Models */,
+				4A8090DF2C3327750099FC29 /* Views */,
 				4AE0DE282C30ECB000B2532A /* TabViewApp.swift */,
 				4AE0DE2A2C30ECB000B2532A /* ContentView.swift */,
 				4AE0DE2C2C30ECB300B2532A /* Assets.xcassets */,
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8090E12C3327D50099FC29 /* PartiesView.swift in Sources */,
+				4A8090E72C3328550099FC29 /* SongListView.swift in Sources */,
 				4AE0DE2B2C30ECB000B2532A /* ContentView.swift in Sources */,
+				4A8090F12C332B360099FC29 /* MusicCell.swift in Sources */,
+				4A8090EC2C332A810099FC29 /* Party.swift in Sources */,
 				4AE0DE292C30ECB000B2532A /* TabViewApp.swift in Sources */,
+				4A8090E32C3327FE0099FC29 /* PlanningView.swift in Sources */,
+				4A8090E52C3328270099FC29 /* AttendanceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

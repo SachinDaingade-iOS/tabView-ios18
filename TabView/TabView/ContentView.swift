@@ -34,29 +34,13 @@ struct ContentView: View {
         }
         .tabViewStyle(.sidebarAdaptable)
         .tabViewCustomization($customization)
+        .tint(.green)
+        .onAppear() {
+                UITabBar.appearance().backgroundColor = .lightGray
+            }
     }
 }
 
-struct PartiesView: View {
-    var parties: [Party]
-    var body: some View { Text("PartiesView") }
-}
-
-struct PlanningView: View {
-    var body: some View { Text("PlanningView") }
-}
-
-struct AttendanceView: View {
-    var body: some View { Text("AttendanceView") }
-}
-
-struct SongListView: View {
-    var body: some View { Text("SongListView") }
-}
-
-struct Party {
-    static var all: [Party] = []
-}
 
 #Preview {
     ContentView()
